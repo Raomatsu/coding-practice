@@ -1,2 +1,2 @@
 # coding-practice
-repository where coding-practice history is stocked 
+repository where coding-practice history is stocked
