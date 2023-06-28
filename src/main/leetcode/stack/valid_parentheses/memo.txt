@@ -1,0 +1,9 @@
+【誤】
+・空のスタックのメソッドを呼び出すとNoSuchElementExceptionが発生することを考慮できていなかった。
+　stackのメソッド呼び出しを行う前に、stackが空でないことの判定も行う。
+
+【メモ】
+・Javaには"Stack"というのがある
+https://docs.oracle.com/javase/jp/8/docs/api/java/util/Stack.html
+・解説
+https://www.youtube.com/watch?v=-5MoizGAkVY

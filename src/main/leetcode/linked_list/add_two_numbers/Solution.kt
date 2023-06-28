@@ -1,4 +1,4 @@
-package leetcode.kotlin.linked_list.add_two_numbers
+package leetcode.linked_list.add_two_numbers
 
 class Answer {
     fun hasCycle(head: ListNode?): Boolean {
