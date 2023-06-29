@@ -1,0 +1,30 @@
+【解きメモ】
+・問題の意味がわからなかったが...K番目に大きい数字を返すメソッドを作れということか。
+・IntArrayなんてものがあるのか
+https://qiita.com/KenjiOtsuka/items/e3d42f34ee731747220d
+・要素を追加するやり方をmutableListしか知らないから、IntArrayをtoList()してmutableListにしてるけど、
+　すごく損な使い方をしてそう
+・IntArray、要素を追加するみたいなのはないのだっけ。
+　配列だから固定長か...だとすればmutableListに変換する流れ、しょうがないのでは。
+　もしくはIntArrayに詰めなおすかか...？
+・こういうときにsort()とかsortDescending()みたいな無思考系って使って良いのかしら。
+
+
+【解説メモ】
+https://qiita.com/KueharX/items/8999b2b903596639fbfa
+https://leetcode.com/problems/kth-largest-element-in-a-stream/solutions/2907825/kotlin-priority-queue/
+・初期化するならinitを使おう
+・ソートは重い
+　要素が増えるほど悪
+⇒ ヒープ（優先度付きキュー）を使う：PriorityQueue
+https://docs.oracle.com/javase/jp/8/docs/api/java/util/PriorityQueue.html
+・優先度付きキュー
+　・優先度順にデータが格納されるFIFOキュー。
+　　データは優先度に従ってキューに挿入される。
+　・リストは新たな要素が追加される度にリスト全体を再ソートする必要があり計算量が多くなる（要素が増えるほど顕著）が、
+　　こちらは要素の追加や削除に必要な計算が少ない。
+　・優先度順に要素を取得したい場合、無駄がない感じで扱いやすそう
+
+
+
+
