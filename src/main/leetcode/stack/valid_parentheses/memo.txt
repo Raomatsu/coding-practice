@@ -1,3 +1,5 @@
+https://leetcode.com/problems/valid-parentheses/
+
 【誤】
 ・空のスタックのメソッドを呼び出すとNoSuchElementExceptionが発生することを考慮できていなかった。
 　stackのメソッド呼び出しを行う前に、stackが空でないことの判定も行う。
