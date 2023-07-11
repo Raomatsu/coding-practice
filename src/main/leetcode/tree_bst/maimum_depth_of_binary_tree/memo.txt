@@ -1,0 +1,19 @@
+https://leetcode.com/problems/maximum-depth-of-binary-tree/
+
+【解きメモ】
+・2の0乗～2のn乗まで足していって、要素数と一致したときのnが深さになりそう
+⇒じゃなくて答えはn+1
+
+
+【解説メモ】
+・Input: root = [3,9,20,null,null,15,7]
+　↑これはリストではない。
+　TreeNodeが、自身の値と、1個下の階層の左右のTreeNodeを持っている。
+　root = [~~]は、その値をflatMapした感じw
+・再帰関数と二分木について
+　https://qiita.com/huront/items/a61fd069b833124e2053
+・再帰使うと発想するのも、実際に再帰のコード書くのもむずい...
+　今のところ、同じこと繰り返す & 終端があるなら再帰を使えうる、ぐらいの認識しかない...
+
+
+
