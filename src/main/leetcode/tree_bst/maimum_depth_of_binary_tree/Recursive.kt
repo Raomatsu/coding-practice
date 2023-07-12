@@ -26,3 +26,21 @@ fun factorialRec(n: Int): Int {
 
     return n * factorialRec(n-1)
 }
+
+/**
+ * 1 + 2 + ... + n
+ */
+fun addToN(n: Int): Int {
+    if (n == 0) return 0
+    return n + addToN(n-1)
+}
+
+/**
+ * フィボナッチ数列のn項目の値を算出
+ */
+fun fibo(n: Int): Int {
+    if (n == 0) return 0
+    else if (n == 1) return 1
+
+    return fibo(n-1) + fibo(n-2)
+}

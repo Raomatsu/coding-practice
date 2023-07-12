@@ -14,6 +14,8 @@ https://leetcode.com/problems/maximum-depth-of-binary-tree/
 　https://qiita.com/huront/items/a61fd069b833124e2053
 ・再帰使うと発想するのも、実際に再帰のコード書くのもむずい...
 　今のところ、同じこと繰り返す & 終端があるなら再帰を使えうる、ぐらいの認識しかない...
+・再帰関数を学ぶと、どんな世界が広がるか
+　https://qiita.com/drken/items/23a4f604fa3f505dd5ad
 
 
 
