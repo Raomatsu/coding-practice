@@ -1,4 +1,4 @@
-package leetcode.tree_bst.maimum_depth_of_binary_tree
+package leetcode.tree_bst.maximum_depth_of_binary_tree
 
 import kotlin.math.pow
 

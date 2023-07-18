@@ -1,4 +1,4 @@
-package leetcode.tree_bst.maimum_depth_of_binary_tree
+package leetcode.tree_bst.maximum_depth_of_binary_tree
 
 // グローバル変数としてmemoを定義。
 // 配列長は後から書き換える前提
