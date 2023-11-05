@@ -1,4 +1,4 @@
-package leetcode.heap_priority_queue
+package leetcode.heap_priority_queue.kth_largest_element_in_a_stream
 
 import java.util.PriorityQueue
 
