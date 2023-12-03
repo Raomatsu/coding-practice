@@ -1,8 +1,11 @@
 package leetcode.hash_map.two_sum
 
 fun main() {
-    test(listOf(2,7,11,15), 9)
-    test(listOf(3,2,4), 6)
+//    test(listOf(2,7,11,15), 9)
+//    test(listOf(3,2,4), 6)
+    twoSum2(intArrayOf(2,7,11,15), 9).forEach {
+        print(it)
+    }
 }
 
 
@@ -37,4 +40,20 @@ fun test(nums: List<Int>, target: Int){
 
     val result = twoSum(numsArray, target).toList()
     print(result)
+}
+
+fun twoSum2(nums: IntArray, target: Int): IntArray {
+    var left = 0
+    var right = 0
+
+    while(left < nums.size) {
+        right = left + 1
+        while(right < nums.size) {
+            if(nums[left] + nums[right] == target) return intArrayOf(left, right)
+            right ++
+        }
+        left ++
+    }
+
+    return intArrayOf(left, right)
 }
