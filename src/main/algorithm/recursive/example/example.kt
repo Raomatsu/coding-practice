@@ -29,7 +29,6 @@ fun euclid(m: Int, n: Int): Int {
  * 　・F(0) = 0
  * 　・F(1) = 1
  * 　・F(n) = F(n-1) + F(n-2)
- *
  */
 // 再帰
 // →計算量が爆発的に多くなる
@@ -73,6 +72,7 @@ fun fibo3(n: Int, memo: MutableList<Int>): Int {
 
 /**
  * ナップサック問題
+ * arrayの中から、総和がwになる組み合わせが作れるか
  */
 fun recursive2(array: IntArray, w: Int, i: Int): Boolean {
     // ベースケース
@@ -82,5 +82,4 @@ fun recursive2(array: IntArray, w: Int, i: Int): Boolean {
     // i番目の数を選ぶ or 選ばない
     return recursive2(array, w - array[i], i - 1) ||
             recursive2(array, w, i - 1)
-
 }
