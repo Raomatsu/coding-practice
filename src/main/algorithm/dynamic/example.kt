@@ -77,3 +77,34 @@ fun q1_3(array: IntArray): Int {
 
     return costList.last()
 }
+
+/**
+ *メモ化再帰
+ * */
+val array_4 = IntArray(100) // ここに足場の情報が入るとする
+val costList_4 = IntArray(100) { Int.MAX_VALUE}
+// i番目の足場の最小コストを算出
+fun recursive(i: Int): Int {
+    // メモされた値であれば即return
+    if (costList_4[i] < Int.MAX_VALUE) return costList_4[i]
+
+    // ベースケース
+    if (i == 0) return 0
+
+    var cost = 0
+
+    // i-1から来るのを想定する場合
+    cost = min(
+        costList_4[i],
+        abs(recursive(i - 1) + abs(array_4[i] - costList_4[i - 1]))
+    )
+
+    // i-2から来るのを想定する場合
+    cost = min(
+        costList_4[i],
+        abs(recursive(i - 2) + abs(array_4[i] - costList_4[i - 1]))
+    )
+
+    costList_4[i] = cost
+    return cost
+}
