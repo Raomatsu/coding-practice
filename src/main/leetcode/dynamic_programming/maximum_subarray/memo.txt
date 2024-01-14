@@ -1,0 +1,7 @@
+https://leetcode.com/problems/maximum-subarray/description/
+
+【別解、解説メモ】
+・numsをループする。
+　nums[i] > それ以前の最大値+nums[i] であれば、nums[i]を始点にした方が和が大きいとして、nums[i]をcurrentMaxに設定
+　nums[i]を和が上回れば、currentMaxを更新
+　
