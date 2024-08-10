@@ -1,4 +1,4 @@
-package b2_6
+package structure.b2_6
 
 import kotlin.math.pow
 

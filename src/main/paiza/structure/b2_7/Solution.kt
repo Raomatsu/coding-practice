@@ -1,4 +1,4 @@
-package b2_7
+package structure.b2_7
 
 fun main() {
     val (maxY, maxX, robotsNum, moveNum) = readln().split(" ").map { it.toInt() }

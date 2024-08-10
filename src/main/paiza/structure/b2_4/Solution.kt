@@ -1,4 +1,4 @@
-package b2_4
+package structure.b2_4
 
 fun main() {
     val (bravesNum, eventsNum) = readln().split(" ").let {

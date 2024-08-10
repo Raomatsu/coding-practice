@@ -1,4 +1,4 @@
-package b2_5
+package structure.b2_5
 
 fun main() {
     val (playersNum, turnsNum) = readln().split(" ").map { it.toInt() }

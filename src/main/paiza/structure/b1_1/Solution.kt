@@ -1,4 +1,4 @@
-package b1_1
+package structure.b1_1
 
 fun main() {
     val num = readLine()!!.toInt()

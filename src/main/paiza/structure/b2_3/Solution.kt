@@ -1,4 +1,4 @@
-package b2_3
+package structure.b2_3
 
 // 自分の得意な言語で
 // Let's チャレンジ！！

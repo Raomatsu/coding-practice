@@ -1,4 +1,4 @@
-package b1_2
+package structure.b1_2
 
 /**
  * https://paiza.jp/works/mondai/class_primer/class_primer__find
