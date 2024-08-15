@@ -7,8 +7,8 @@ fun main() {
     // 挿入ソート
     // 整列済みの列に未整列の要素を入れ込んでいく
 
-    // 左端を整列済みとする
-    // 1つ追加する=比べて、右に入れる方を決める
+    // 整列済みリストに要素を加えていく
+    // 入れる位置が決まる（対象の要素が比較先の整列済み要素より大きくなる）まで、整列済み要素は右にずらしていく
     for (targetIndex in 1 .. list.lastIndex) {
         val target = list[targetIndex]
         var compareIndex = targetIndex - 1
